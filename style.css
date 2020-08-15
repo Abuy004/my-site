@@ -1,3 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+ul,
+li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   min-width: 960px;
@@ -11,10 +24,10 @@ body {
   background-position: top center;
 }
 
-.container {
-  max-width: 928px;
+.container{
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 16px; 
 }
 
 .page-header {
@@ -82,6 +95,7 @@ body {
   text-align: center;
 }
 
+
 .user-image {
   margin: 0 0 32px;
   text-align: center;
@@ -139,23 +153,94 @@ body {
   margin: 0 0 120px;
 }
 
-.projects {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.projects li {
-  margin: 0 0 80px;
-}
-
-.project-image {
-  margin: 0 0 24px;
+.slider__item-content{
   text-align: center;
+  padding-top: 110px;
+  max-width: 665px;
+  margin: 0 auto;
 }
+.slider__title{
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+.slider__text{
+  line-height: 24px;
+  font-size: 18px;
+  color: #d3d2d2;
+  margin-bottom: 50px;  
+}
+.default-btn{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  color: black;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  padding: 8px 30px 8px 24px;
+  border: 1px solid #ffc222;
+  border-right-width: 20px;
+  position: relative;
+  z-index: 2;
+  outline: none;
+}
+.default-btn:after{
+  content: "\f105";
+  font-family: 'icomoon';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -12px;
+}
+.slider__inner{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  position:relative;
+  background-image:url(../my-site/source/new/img/slider-fon.jpg);
+}
+.slick-btn{
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
 
-.projects p {
-  margin: 0 0 24px;
+  cursor: pointer;
+  outline: none;
+  background-color: #288be6;
+    border-radius: 4px;
+}
+.slick-btn.slick-disabled{
+  cursor: default;
+  background-color: transparent;
+}
+.slick-btn:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'icomoon';
+  color: #fff;
+}
+.slick-next:before{
+  content: "\f105";
+}
+.slick-prev:before{
+  content: "\f104";
+}
+.slick-next{
+  right: 0;
+}
+.slick-prev{
+  left: 0;
 }
 
 .button {

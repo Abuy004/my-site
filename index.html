@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="style.css">
     <title>Портфолио Junior верстальщика</title>
   </head>
 
@@ -29,25 +33,61 @@
         <img src="files/user.jpg" width="928" height="536" alt="Фотография Неопознанного Енота">
       </figure>
       <h3>Пара слов о себе</h3>
-      <p>Текст с парой слов о себе.</p>
+      <p>Меня зовут Абуй, я занимаюсь Front-end разработкой, в частности версткой сайтов.</p>
       <h3>Чем могу быть полезен</h3>
-      <p>Текст о том, чем могу быть полезен.</p>
+      <ul>
+        Навыки, которыми я владею :
+        <li>Уверенное знание HTML5</li>
+        <li>Уверенное знание CSS3</li>
+        <li>Уверенная работа с препроцессором CSS - SASS/SCSS</li>
+        <li>Flexbox</li>
+        <li>Уверенное владение библиотекой Bootstrap 4</li>
+        <li>Знания адаптивной и кроссбраузерной вёрстки</li>
+        <li>Оптимизация загрузки страниц</li>
+        <li>Понимание семантической верстки</li>
+        <li>Понимание методологии БЭМ</li>
+        <li>Умение работы в Avocode</li>
+        <li>Понимание как работают многостраничные сайты</li>
+        <li>Работа с системой контроля версий кода - Git</li>
+        <li>Знания JavaScript на начальном уровне.</li>
+        <li>Начальные знания работы и настройки Gulp</li>
+        <li>Устранение неполадок верстки на рабочих проектах</li>
+        <li>Выяснение причин и устранение неявных ошибок (особенно под разные мобильные устройства, операционные системы, браузеры).</li>
+        <li>Умение искать информацию путем поисковых систем (Google, Яндекс и т.д.)</li>
+      </ul>
     </div>
     </section>
 
     <section class="portfolio">
       <div class="container">
       <h2 class="subheading">Мои работы</h2>
-      <figure class="project-image">
-  <img src="files/project.jpg" width="928" height="536" alt="Cайт инструктора Кекса">
-</figure>
-<a class="button" href="source/project/index.html">Открыть страницу</a>
-
-      <h3>Сайт инструктора Кекса</h3>
-      <p>Небольшой лендинг о школе для начинающих.</p>
-<a class="button" href="project/index.html">Открыть страницу</a>
+        <div class="slider__inner">
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__title">
+              Сайт инструктора Кекса
+            </div>
+            <div class="slider__text">
+              Небольшой лендинг о школе для начинающих.
+            </div>
+           <a target="_blank" class="button" href="source/project/index.html">Открыть страницу</a>
+          </div>
+        </div>
+         <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__title">
+              LOGOTYPE
+            </div>
+            <div class="slider__text">
+              КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+            </div>
+          <a target="_blank" class="button" href="source/new/index.html">Открыть страницу</a>
+          </div>
+        </div>
+      </div>
       <h3>Блог начинающего верстальщика</h3>
       <p>Статический блог про обучение HTML и CSS.</p>
+      <a target="_blank" class="button" href="project/index.html">Открыть страницу</a>
     </div>
     </section>
 
@@ -57,5 +97,12 @@
     <a class="footer-phone" href="tel:+79215687541">+7 921 568 75 41</a>
   </div>
 </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/main.js"></script>
+
   </body>
 </html>
